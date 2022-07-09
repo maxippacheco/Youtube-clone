@@ -7,5 +7,24 @@ export const darkTheme = createTheme({
     text: {
       'secondary': '#AAA'
     }
+  
   },
+
+  components:{
+    MuiButton: {
+      defaultProps: {
+        variant: 'contained',
+        size: 'small',
+        disableElevation: true,
+      },
+      styleOverrides: {
+        root: {
+          textTransform: 'none',
+          boxShadow: 'none',
+          borderRadius: 10,
+        }
+      }
+    }
+  }
+  
 });
