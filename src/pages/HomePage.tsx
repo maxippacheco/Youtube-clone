@@ -10,7 +10,16 @@ export const HomePage = () => {
 
 					<VideosCard />
 					<VideosCard />
+					<VideosCard />
+					<VideosCard />
+					<VideosCard />
+					<VideosCard />
+					<VideosCard />
+					<VideosCard />
+					<VideosCard />
+					<VideosCard />
 			</VideoList>
+			
 		</YoutubeLayout>
 	)
 }

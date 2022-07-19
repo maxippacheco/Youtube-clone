@@ -1,3 +1,4 @@
+import { Box } from '@mui/material';
 import { FC } from 'react';
 import { Navbar, SideMenu } from '../components/ui';
 
@@ -16,9 +17,9 @@ export const YoutubeLayout: FC<Props> = ({ children }) => {
 			<SideMenu />
 
 			<main style={{
-				margin: '80px auto',
+				margin: '40px auto',
 				maxWidth: '1440px',
-				padding: '0px 20px',
+				// padding: '0px 20px',
 			}}>
 				{ children }
 			</main>

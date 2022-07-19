@@ -3,9 +3,8 @@ import { Card, CardActionArea, CardMedia, CardContent, Typography, Grid } from '
 export const VideosCard = () => {
    return (
 
-      <Grid item xs={ 12 } sm={ 6 } md={ 3 }>
-         <Card>
-            <CardActionArea>
+      <Grid item xs={ 12 } sm={ 6 } md={ 4 } sx={{ margin: 0}}>
+         <CardContent sx={{ padding: { xs: 0, sm: 1 } }}>
                <CardMedia
                   component="img"
                   height="200"
@@ -21,8 +20,8 @@ export const VideosCard = () => {
                            style={{ height: 40, width: 40, marginRight: 2, borderRadius: 100 }}
                         />
                      </Grid>
-                     <Grid item sm={ 10 }>
-                        <Typography fontWeight={ 700 } sx={{ fontSize:{ xs: 12, sm: 15 } }}>EMPIEZAN los PROBLEMAS | CARGA DÍA 2</Typography>
+                     <Grid item sm={ 10 } sx={{ paddingLeft: { xs: 1, md: 0 }}}>
+                        <Typography fontWeight={ 700 } sx={{ fontSize:{ xs: 13, sm: 15 } }}>EMPIEZAN los PROBLEMAS | CARGA DÍA 2</Typography>
 
                         <Typography variant="subtitle2" color="text.secondary" fontWeight={ 400 }>Joan Pradells</Typography>
                         <Typography variant="caption"   color="text.secondary">37.723 visualizaciones . hace 7 horas</Typography>
@@ -31,8 +30,7 @@ export const VideosCard = () => {
 
                      
                </CardContent>
-            </CardActionArea>
-         </Card>
+         </CardContent>
       </Grid>
    );
 };

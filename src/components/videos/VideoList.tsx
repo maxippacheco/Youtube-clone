@@ -6,7 +6,8 @@ interface Props {
 
 export const VideoList = ({ children }: Props) => {
 	return (
-		<Grid container spacing={ 4 } display="flex" justifyContent="center">
+		<Grid container display="flex" justifyContent="center">
+
 			{ children }
 		</Grid>
 	)
