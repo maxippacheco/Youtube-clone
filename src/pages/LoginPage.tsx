@@ -3,6 +3,8 @@ import { Box, Button, Grid, TextField, Typography } from '@mui/material';
 import { Link } from "react-router-dom";
 import { Formik, Form } from 'formik'
 import { MyTextInput } from "../components/input";
+import * as Yup from 'yup'
+import { form } from "../utils";
 
 export const LoginPage = () => {
 	
@@ -17,11 +19,11 @@ export const LoginPage = () => {
 					}}
 					onSubmit={(values) => {
 						console.log(values);
-						
 					}}
+					validationSchema={ form.loginValidation }
 				>
 					{
-						({ handleSubmit, handleChange }) => (
+						({ handleSubmit }) => (
 							<form onSubmit={ handleSubmit }>
 								<Grid container spacing={ 3 }>
 									<Grid item xs={ 12 }>

@@ -18,6 +18,7 @@ export const MyTextInput = ({ label, ...props }: Props) => {
 					fullWidth
 					color="error"
 					variant="outlined"
+					sx={{ mb: 1}}
 					label={ label }
 					{ ...field }
 					{...props }
