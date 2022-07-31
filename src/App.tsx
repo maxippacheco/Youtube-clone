@@ -1,19 +1,25 @@
+import { useContext, useEffect, useState } from 'react';
+
 import { CssBaseline } from '@mui/material'
-
 import { ThemeProvider } from '@mui/material/styles';
-import { darkTheme } from '../themes';
-import { UiProvider } from './context';
-import { AppRouter } from './routers';
 
+import { UiContext, UiProvider } from './context';
+import { AppRouter } from './routers';
+import { darkTheme } from './themes';
 
 const App = () => {
+
+  // todo: fix theme stuff
+  const { theme } = useContext( UiContext );
+
+
   return (
-    <UiProvider>
-      <ThemeProvider theme={ darkTheme }>
+    <ThemeProvider theme={ darkTheme }>
+        <UiProvider>
         <CssBaseline />
         <AppRouter />
+      </UiProvider>
       </ThemeProvider>
-    </UiProvider>
   )
 }
 

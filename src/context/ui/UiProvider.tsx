@@ -1,5 +1,6 @@
 import { useReducer } from 'react';
 import { FC } from 'react';
+import { ITheme } from '../../interfaces';
 import { uiReducer, UiContext } from './';
 
 interface FCProps{
@@ -7,12 +8,14 @@ interface FCProps{
 }
 
 export interface UiState {
- 	openMenu: boolean;
+	isMenuOpen: boolean;
+	theme     : ITheme;
 }
 
 
 const UI_INITIAL_STATE: UiState = {
-	openMenu: false,
+	isMenuOpen: false,
+	theme: 'dark'
 }
 
 
@@ -20,11 +23,20 @@ const { Provider } = UiContext;
 
 export const UiProvider: FC<FCProps> = ({ children }) => {
 
-const [state, dispatch] = useReducer( uiReducer, UI_INITIAL_STATE)
+	const [state, dispatch] = useReducer( uiReducer, UI_INITIAL_STATE)
+
+	const toggleMenu = () => dispatch({ type:'[Ui] - Toggle menu' });
+
+	const toggleTheme = () => dispatch({ type: '[Ui] - Toggle theme' });
+
 
 	return(
 		<Provider value={{
-			...state
+			...state,
+	
+			// Methods
+			toggleMenu,
+			toggleTheme,
 		}}>
 			{ children}
 		</Provider>

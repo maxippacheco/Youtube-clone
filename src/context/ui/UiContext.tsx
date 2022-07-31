@@ -1,8 +1,14 @@
 
 import { createContext } from 'react';
+import { ITheme } from '../../interfaces';
 
 interface ContextProps{
-	openMenu: boolean;
+	theme			: ITheme;
+	isMenuOpen: boolean;
+	
+	// Methods
+	toggleMenu: () => void;
+	toggleTheme:() => void;
 	
 }
 

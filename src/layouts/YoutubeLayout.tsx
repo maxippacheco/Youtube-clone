@@ -17,7 +17,7 @@ export const YoutubeLayout: FC<Props> = ({ children }) => {
 			<SideMenu />
 
 			<main style={{
-				margin: '40px auto',
+				margin: '80px auto',
 				maxWidth: '1440px',
 				// padding: '0px 20px',
 			}}>
