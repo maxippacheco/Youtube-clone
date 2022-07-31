@@ -1,10 +1,10 @@
-import { Card, CardActionArea, CardMedia, CardContent, Typography, Grid } from '@mui/material';
+import { CardMedia, CardContent, Typography, Grid } from '@mui/material';
 
 export const VideosCard = () => {
    return (
 
       <Grid item xs={ 12 } sm={ 6 } md={ 4 } sx={{ margin: 0}}>
-         <CardContent sx={{ padding: { xs: 0, sm: 1 } }}>
+         <CardContent sx={{ padding: { xs: 0, sm: 1 }, cursor: 'pointer' }}>
                <CardMedia
                   component="img"
                   height="200"

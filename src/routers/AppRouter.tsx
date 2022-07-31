@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { HomePage, LoginPage, RegisterPage, VideoPage } from '../pages'
+import { CreatevideoPage, HomePage, LoginPage, RegisterPage, VideoPage } from '../pages'
 
 export const AppRouter = () => {
 	return (
@@ -9,6 +9,7 @@ export const AppRouter = () => {
 				<Route path="/login" element={ <LoginPage /> } />
 				<Route path="/register" element={ <RegisterPage /> } />
 				<Route path="/video/:id" element={ <VideoPage /> } />
+				<Route path="/create" element={ <CreatevideoPage /> } />
 			</Routes>
 		</BrowserRouter>
 	)

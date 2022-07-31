@@ -1,4 +1,5 @@
 
+import { red } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 
 export const darkTheme = createTheme({
@@ -22,6 +23,14 @@ export const darkTheme = createTheme({
           textTransform: 'none',
           boxShadow: 'none',
           borderRadius: 10,
+          backgroundColor: red[500],
+          color: 'white',
+          borderColor: red[600],
+          ":hover": {
+            backgroundColor: red[800],
+            color: 'white',
+            borderColor: red[900]
+          }
         }
       }
     }

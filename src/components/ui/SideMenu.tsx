@@ -14,7 +14,7 @@ export const SideMenu = () => {
 
             <List
                 subheader={
-                    <ListSubheader>Youtobe</ListSubheader>
+                    <ListSubheader sx={{ textAlign: 'center' }}>Youtobe</ListSubheader>
                 }
             >
 
@@ -43,8 +43,8 @@ export const SideMenu = () => {
 
 
                 {/* Admin */}
-                <Divider />
-                <ListSubheader>Videos Panel</ListSubheader>
+                {/* <Divider />
+                <ListSubheader>Videos Panel</ListSubheader> */}
 
                 <ListItem button>
                     <ListItemIcon>
