@@ -55,7 +55,11 @@ export const LoginPage = () => {
 											<Typography>Ingresar</Typography>
 										</Button>
 										<Link to="/register" style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }}>
-											<Typography textAlign="center" mt={2} fontSize={15}>¿No tienes una cuenta?</Typography>
+											<Typography textAlign="center" mt={2} fontSize={15} sx={{
+												":hover":{
+													textDecoration: 'underline'
+												}
+											}}>¿No tienes una cuenta?</Typography>
 										</Link>
 									</Grid>
 

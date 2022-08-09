@@ -39,9 +39,11 @@ export const CreatevideoPage = () =>  {
 
   return (
     <YoutubeLayout>
-      <Button variant="outlined" onClick={handleClickOpen} sx={{ padding: 2, width: 250, fontSize: 18}}>
-        Create your video
-      </Button>
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: 'calc(100vh - 200px)'}}>
+        <Button variant="contained" color="error" onClick={handleClickOpen} sx={{ padding: 2, width: 250, fontSize: 18}}>
+          Create your video
+        </Button>
+      </Box>
       <Dialog
         fullScreen
         open={open}
@@ -61,7 +63,7 @@ export const CreatevideoPage = () =>  {
             <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
               Create new video
             </Typography>
-            <Button autoFocus color="inherit" onClick={handleClose}>
+            <Button autoFocus color="error" variant="contained" onClick={handleClose}>
               save
             </Button>
           </Toolbar>

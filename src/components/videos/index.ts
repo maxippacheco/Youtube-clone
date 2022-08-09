@@ -1,3 +1,3 @@
 
-export * from './VideosCard';
+export * from './VideoCard';
 export * from './VideoList'

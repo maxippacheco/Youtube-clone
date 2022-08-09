@@ -1,24 +1,24 @@
 import { YoutubeLayout } from '../layouts';
-import { VideosCard, VideoList } from '../components/videos';
+import { VideoCard, VideoList } from '../components/videos';
 
 export const HomePage = () => {
 	
 	return (
 		<YoutubeLayout>
 			<VideoList>
-					<VideosCard />
-					<VideosCard />
+					<VideoCard />
+					<VideoCard />
 
-					<VideosCard />
-					<VideosCard />
-					<VideosCard />
-					<VideosCard />
-					<VideosCard />
-					<VideosCard />
-					<VideosCard />
-					<VideosCard />
-					<VideosCard />
-					<VideosCard />
+					<VideoCard />
+					<VideoCard />
+					<VideoCard />
+					<VideoCard />
+					<VideoCard />
+					<VideoCard />
+					<VideoCard />
+					<VideoCard />
+					<VideoCard />
+					<VideoCard />
 			</VideoList>
 			
 		</YoutubeLayout>
