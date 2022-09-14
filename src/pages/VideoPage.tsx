@@ -80,3 +80,5 @@ export const VideoPage = () => {
 		</YoutubeLayout>
 	)
 }
+
+export default VideoPage;

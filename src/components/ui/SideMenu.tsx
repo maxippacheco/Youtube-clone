@@ -2,11 +2,13 @@ import { Box, Drawer, List, ListItem, ListItemIcon, ListItemText, ListSubheader 
 import { AccountCircleOutlined, AdminPanelSettings, LoginOutlined, VideoSettingsOutlined, VpnKeyOutlined, AddCircleOutline } from '@mui/icons-material';
 import { useContext } from "react";
 import { UiContext } from '../../context';
+import { useNavigate } from "react-router-dom";
 
 
 export const SideMenu = () => {
 
 
+    const navigate = useNavigate();
     const { isMenuOpen, toggleMenu } = useContext( UiContext )
 
     return (
@@ -34,7 +36,7 @@ export const SideMenu = () => {
 
 
 
-                    <ListItem button>
+                    <ListItem button onClick={() => navigate('/login')}>
                         <ListItemIcon>
                             <VpnKeyOutlined/>
                         </ListItemIcon>
@@ -59,7 +61,8 @@ export const SideMenu = () => {
                         </ListItemIcon>
                         <ListItemText primary={'Your videos'} />
                     </ListItem>
-                    <ListItem button>
+
+                    <ListItem button onClick={() => navigate('/create')}>
                         <ListItemIcon>
                             <AddCircleOutline />
                         </ListItemIcon>

@@ -24,3 +24,5 @@ export const HomePage = () => {
 		</YoutubeLayout>
 	)
 }
+
+export default HomePage;

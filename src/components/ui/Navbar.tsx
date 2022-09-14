@@ -8,6 +8,7 @@ import { ThemeSwitch } from '../switch';
 export const Navbar = () => {
 
 	const { toggleMenu, toggleTheme, theme } = useContext( UiContext );
+	
 
 	return (
 		<AppBar position="fixed">

@@ -120,3 +120,5 @@ export const CreatevideoPage = () =>  {
     </YoutubeLayout>
   );
 }
+
+export default CreatevideoPage;

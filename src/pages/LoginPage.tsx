@@ -74,3 +74,5 @@ export const LoginPage = () => {
 		</AuthLayout>
 	)
 }
+
+export default LoginPage;
